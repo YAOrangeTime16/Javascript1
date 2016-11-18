@@ -1,0 +1,15 @@
+h1 {
+}
+#ul {
+    width: 30%;
+    height: 88%;
+    background-color: bisque;
+    padding: 10px 30px;
+}
+
+#ulDone {
+    width: 30%;
+    height: 88%;
+    background-color: azure;
+    padding: 10px 30px
+}

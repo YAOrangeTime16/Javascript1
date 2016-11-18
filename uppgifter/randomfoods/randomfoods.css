@@ -1,0 +1,46 @@
+body {
+    background-image: url(image/kitchen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px 600px;
+    margin: 100px;
+    text-align: center;
+}
+
+p {
+
+    margin: auto;
+    width: 550px;
+    font-size: 28px;
+    color:aliceblue;
+    padding: 30px;
+    background-color: rgba(184, 134, 11, 0.7);
+}
+
+a {
+    color:aliceblue;
+}
+
+#main {
+    text-align: center;
+    padding: 10px;
+}
+button {
+    background-color: darkgoldenrod;
+    margin: 50px;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 15px;
+    color: aliceblue;
+}
+
+#vego {
+        bottom: 10px;
+}
+
+label {
+    background-color: darkolivegreen;
+    padding: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
