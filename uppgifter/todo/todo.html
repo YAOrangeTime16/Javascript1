@@ -3,17 +3,28 @@
     <head>
         <meta charset="utf-8"/>
         <title>My To-Do list</title>
-        <link rel="stylesheet" type="text/css" href="todo.css">
+        <link rel="stylesheet" href="todo.css">
     </head>
     <body>
         <form name="form" id="form">
-            <h1>Add your tasks to do</h1>
-            <input type="text" name="addText" placeholder="Add your task"/>
-            <input type="button" value="add task" onclick="addTask()"/>
-            <ul id="ul">Tasks to do</ul>
-            <ul id="ulDone">Done tasks</ul>
-            <button type="button" value="done" onclick="addDoneList()">done</button>
-            <button type="button" value="delete" onclick="deleteList()">delete</button>
+            <div id="div_textarea">
+                <h1>Add your tasks to do</h1>
+                <input type="text" name="addText" class="text" placeholder="Add your task"/>
+                <input type="button" id="btn_add" value="add task" onclick="addTask()"/>
+            </div>
+            <div id="div_todo">
+                <ul id="ul">
+                    <h2>To do</h2>
+                </ul>
+                <input type="button" class="btn_todo" onclick="addDoneList()" value="move to done"/>
+                <input type="button" class="btn_todo" onclick="deleteList()" value="delete"/>
+            </div>
+            <div id="div_done">
+                <ul id="ulDone">
+                    <h2>Done</h2>
+                </ul>
+                <input type="button" class="btn_done" id="erase" onclick="dlDone()" value="delete"/>
+            </div>
         </form>
         <script src="todo.js"></script>
     </body>

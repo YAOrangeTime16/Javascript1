@@ -1,15 +1,58 @@
-h1 {
+body{
+    background-color: darkolivegreen;
+    font-family: sans-serif, "meirio";
 }
-#ul {
-    width: 30%;
+#ul{
+    width: 60%;
     height: 88%;
-    background-color: bisque;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 #ulDone {
-    width: 30%;
+    width: 60%;
     height: 88%;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.text{
+    width: 30%;
+    height: 20px;
+}
+
+#btn_add{
+    position: absolute;
+    top: 115px;
+    left:0;
+}
+li{
+    word-wrap: break-word;
+}
+
+#div_todo{
+    position: relative;
+    top: 60px;
+    border-top: 1px solid gray;
+    background-color: bisque;
+}
+
+#div_done{
+    position: relative;
+    top: 70px;
+    border-top: 1px solid gray;
     background-color: azure;
-    padding: 10px 30px
+}
+
+input[type="button"]{
+    margin: 0 0 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn_todo{
+    background-color: coral;
+}
+
+.btn_done{
+    background-color: darkcyan;
 }

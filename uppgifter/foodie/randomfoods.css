@@ -1,0 +1,78 @@
+body {
+    background-image: url(image/kitchen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 100px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#main {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 28px;
+    color:aliceblue;
+    height: 50px;
+    width: 550px;
+    padding: 50px;
+    background-color: rgba(184, 134, 11, 0.7);
+    border: 1px solid aliceblue;
+}
+
+#anchor {
+    color:aliceblue;
+}
+
+button{
+    background-color: darkgoldenrod;
+    width: 30%;
+    margin: 60px;
+    min-width: 100px;
+    cursor: pointer;
+    border: 1px solid aliceblue;
+    padding: 15px;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+#cbox{
+    display: none;
+}
+
+#cbox +label{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px 10px 35px;
+    background-color: darkolivegreen;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+#cbox + label::before{
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1px solid white;
+    left: 10px;
+    background-color: darkseagreen;
+}
+
+#cbox:checked + label::after{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 14px;
+    left: 16px;
+    top: 5px;
+    border-right: 4px solid darkgoldenrod;
+    border-bottom: 4px solid darkgoldenrod;
+    transform: rotate(45deg);
+}
