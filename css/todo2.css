@@ -1,0 +1,104 @@
+h1, h2, h3, h4, h5 {
+    color: #7a9ab9;
+}
+
+.app-title{
+    margin-top: 2rem;
+}
+
+span{
+    display: inline-block;
+    width: 55%;
+    font-size: 2.2rem;
+}
+
+@media screen and (max-width: 650px){
+    span{
+        line-height: 5rem;
+    }
+}
+input[type="button"].done{
+    color: #33C3F0;
+}
+
+#todo-div > li {
+    display: flex;
+    flex-direction: row;
+}
+
+#todo-div > li > span {
+    width: 70%;
+}
+
+#todo-div > li > input[type="button"]{
+    margin: 0 1%;
+}
+
+@media screen and (max-width: 650px){
+    #todo-div > li {
+        flex-wrap: wrap;
+    }
+    #todo-div > li > input[type="button"]{
+        width: 46%;
+    }
+}
+
+
+
+#modal-overlay{
+    display: none;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 120%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal-content{
+    display: none;
+    z-index: 2;
+    position: relative;
+    width: 70%;
+    height: 50%;
+    top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    background: #fff;
+}
+
+.modal-innerdiv{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50%;
+    width: 90%;
+}
+
+#modal-edit {
+    width: 100%;
+}
+
+@media screen and (max-width: 550px){
+    .modal-innerdiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #save {
+        margin-top: 1rem;
+        width: 60%;
+    }
+}
+
+
+
+
+#error-message {
+    color: darkred;
+}
+
